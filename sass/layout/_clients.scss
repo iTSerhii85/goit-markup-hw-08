@@ -1,0 +1,23 @@
+.clients-social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  
+  .clients-social-list__icon {
+    @include flex-center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    transition: fill var(--transition-time-cubic),
+      border-color var(--transition-time-cubic);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+      }
+  }

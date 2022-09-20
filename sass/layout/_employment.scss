@@ -1,0 +1,32 @@
+.activity-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .activity-list__label_absolute {
+    @include flex-center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .activity-list__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  
+    min-height: 70px;
+    padding: 27px;
+    margin: 0%;
+  }
+
+  .activity-list__item_relative {
+    position: relative;
+  }

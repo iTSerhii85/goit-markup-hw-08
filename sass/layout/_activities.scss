@@ -1,0 +1,32 @@
+.activities-list {
+  display: flex;
+  gap: 30px;
+}
+
+.activities-section__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .activities-list__icon-wrap {
+    @include flex-center;
+
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  
+    margin-bottom: 30px;
+  }
+
+  .activities-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    margin: 0;
+  }
