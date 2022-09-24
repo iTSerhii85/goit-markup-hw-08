@@ -245,6 +245,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -257,8 +258,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  min-height: 609px;
   background-color: var(--background-color);
   top: 50%;
   left: 50%;
@@ -291,6 +292,12 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .for-icon {
   display: block;
   position: relative;
@@ -572,6 +579,11 @@ img {
   background-clip: padding-box;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile2x.jpg);
+  }
+}
 .hero {
   text-align: center;
   padding-top: 118px;
@@ -618,6 +630,11 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tablet1x.jpg);
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tablet2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .background {
     max-width: 1200px;
@@ -636,6 +653,11 @@ img {
     font-size: 44px;
     line-height: 1.3636363636;
     max-width: 696px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero2x.jpg);
   }
 }
 .activities-list {
