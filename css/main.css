@@ -98,6 +98,7 @@ img {
   visibility: hidden;
   pointer-events: none;
   transition: opacity var(--transition-time-cubic), visibility var(--transition-time-cubic);
+  overflow-y: scroll;
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -558,19 +559,32 @@ img {
     padding: 32px 0;
   }
 }
+.background {
+  max-width: 480px;
+  min-height: 400px;
+  margin: 0 auto;
+  background-color: var(--background-color-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mobile1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: padding-box;
+}
+
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero__title {
   color: var(--hero-title-color);
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -582,12 +596,12 @@ img {
   font-family: var(--button-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  min-width: 216px;
-  padding: 10px 32px;
+  min-width: 200px;
+  padding: 10px 24px;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -597,18 +611,33 @@ img {
   background-color: #188ce8;
 }
 
-.background {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: var(--background-color-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
-  background-origin: padding-box;
-  background-clip: padding-box;
+@media screen and (min-width: 768px) {
+  .background {
+    max-width: 768px;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tablet1x.jpg);
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .background {
+    max-width: 1200px;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero.jpg);
+  }
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__button {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+    max-width: 696px;
+  }
+}
 .activities-list {
   display: flex;
   gap: 30px;

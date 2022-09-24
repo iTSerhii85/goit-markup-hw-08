@@ -18,6 +18,7 @@
     }
 
     transition: opacity var(--transition-time-cubic), visibility var(--transition-time-cubic);
+    overflow-y: scroll;
 }
 
 .mobile-nav-list__link.current {
