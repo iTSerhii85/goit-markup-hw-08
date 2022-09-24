@@ -24,14 +24,14 @@
         <nav>
           <a href="./index.html" class="link logo"><span>Web</span>Studio</a>
           <ul class="list site-nav">
-            <li>
-              <a class="link current" href="./index.html">Студія</a>
+            <li class="site-nav__item">
+              <a class="link current site-nav__link" href="./index.html">Студія</a>
             </li>
-            <li>
-              <a class="link" href="./portfolio.html">Портфоліо</a>
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li>
-              <a class="link" href="#">Контакти</a>
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -41,27 +41,25 @@
           </svg>
         </button>
         <ul class="auth-nav list">
-          <li class="icon-list">
-            <a class="link mail-icon" href="mailto:info@devstudio.com"
-              ><svg
-                class="hat-icon-img"
+          <li class="auth-nav__item">
+            <a class="link auth-nav__link" href="mailto:info@devstudio.com">
+              <svg
+                class="auth-nav__icon"
                 aria-label="логотип конверт"
                 width="16"
-                height="12"
-              >
+                height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                <span>info@devstudio.com</span>
-                </a>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
-          <li class="icon-list">
-            <a class="link phone-icon" href="tel:+380961111111"
-              ><svg
-                class="hat-icon-img"
+          <li class="auth-nav__item">
+            <a class="link auth-nav__link" href="tel:+380961111111">
+              <svg
+                class="auth-nav__icon"
                 aria-label="логотип конверт"
                 width="10"
-                height="16"
-              >
+                height="16">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
               <span>+38 096 111 11 11</span>
@@ -69,7 +67,7 @@
           </li>
         </ul>
       </div>
-      <!-- Мобільне меню -->
+      <!--! Мобільне меню -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button type="button" class="mobile-menu__close-btn" data-menu-close>

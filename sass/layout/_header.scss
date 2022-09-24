@@ -22,29 +22,117 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 .hat {
-  padding: 16px 0;
+  height: 60px;
   background-color: var(--header-background-color);
   border-bottom: 1px solid #ececec;
 }
-.current {
+.site-nav__link.current {
       color: var(--accent-color);
 }
 
+// ! Стили для таблеток - 768рх
+
 @media screen and (min-width: 768px) {
+  .hat {
+    height: 80px;
+  }
+
   .site-nav {
     display: flex;
     gap: 50px;
+    margin-left: 87px;
+  }
+
+  .site-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: (16/14);
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    position: relative;
+
+    padding: 32px 0;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    transform: color var(--transition-time-cubic);
+  }
+
+  .site-nav .current {
+    color: var(--accent-color);
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        bottom: 0;
+      }
   }
   
   .auth-nav {
     display: block;
   }
 
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .auth-nav__icon {
+    margin-right: 8px;
+    fill: currentColor;
+    transform: fill var(--transition-time-cubic);
+  }
+
+  .auth-nav__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: (14/12);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    transform: color var(--transition-time-cubic);
+  }
+
   .open-mobile-menu-button {
     display: none;
+  }
+
+    .hat__container > nav {
+    display: flex;
+    align-items:center;
+  }
+}
+
+// ! Стили для десктоп - 1200рх
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    gap: 30px;
+  }
+
+  .auth-nav__link {
+    padding: 32px 0;
   }
 }
 
@@ -80,20 +168,20 @@
 //     }
 //   }
   
-//   .site-nav .current {
-//     color: var(--accent-color);
+  // .site-nav .current {
+  //   color: var(--accent-color);
 
-//     &::after {
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 2px;
-//         background-color: var(--accent-color);
-//         bottom: 0;
-//       }
-//   }
+  //   &::after {
+  //       content: "";
+  //       display: block;
+  //       position: absolute;
+  //       width: 100%;
+  //       height: 4px;
+  //       border-radius: 2px;
+  //       background-color: var(--accent-color);
+  //       bottom: 0;
+  //     }
+  // }
   
 //   .auth-nav .link {
 //     color: var(--primary-text-color);

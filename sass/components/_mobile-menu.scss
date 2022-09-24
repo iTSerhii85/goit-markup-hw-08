@@ -16,6 +16,12 @@
         visibility: visible;
         pointer-events: auto;
     }
+
+    transition: opacity var(--transition-time-cubic), visibility var(--transition-time-cubic);
+}
+
+.mobile-nav-list__link.current {
+    color: var(--accent-color);
 }
 
 .mobile-menu__close-btn {
