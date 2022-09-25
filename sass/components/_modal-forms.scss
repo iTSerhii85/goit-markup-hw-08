@@ -1,20 +1,19 @@
-.for-icon {
-    display: block;
-    position: relative;
-  }
-
-  .contact-form > p {
+.contact-form {
+  max-width: 370px;
+}
+ 
+ .contact-form__text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: (30/20);
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
     margin-bottom: 12px;
     margin-top: 0;
   }
 
-  .forms {
+    .forms {
     display: block;
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -27,41 +26,46 @@
     }
   }
 
-  .user-info {
+  .contact-form__for-icon {
+    display: block;
+    position: relative;
+  }
+
+    .contact-form__user-info {
     height: 40px;
     padding-left: 42px;
   }
 
-  .field {
+    .contact-form__field {
     margin-bottom: 10px;
   }
-  
-  .form-label {
+
+    .contact-form__label {
     display: block;
     font-size: 12px;
-    line-height: 14px;
+    line-height: (14/12);
     letter-spacing: 0.01em;
     margin-bottom: 4px;
   }
 
-  .coment-area {
+    .contact-form__field-area {
+    margin-bottom: 20px;
+  }
+
+    .contact-form__comment-area {
     height: 120px;
     padding: 12px 16px;
     resize: none;
 
     &::placeholder {
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 14px;
+      line-height: (16/14);
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
     }
   }
 
-  .field-area {
-    margin-bottom: 20px;
-  }
-  
-  .icon-forms {
+    .contact-form__icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -69,15 +73,16 @@
     fill: #212121;
     transition: fill var(--transition-time-cubic);
 
-    .user-info:focus + & {
+    .contact-form__user-info:focus + & {
       fill: var(--accent-color);
     }
   }
-  
-  //! Чекбокс  модалки
-  .agreement-label {
-    font-size: 14px;
-    line-height: 24px;
+
+         //! Чекбокс  модального окна
+
+    .contact-form__agreement-label {
+    font-size: 12px;
+    line-height: (14/12);
     letter-spacing: 0.03em;
   
     display: flex;
@@ -91,7 +96,7 @@
     }
   }
 
-  .check {
+    .check {
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
@@ -101,26 +106,96 @@
     margin-right: 7px;
     transition: background-color var(--transition-time-cubic);
 
-    .form-check:checked + & {
+    .contact-form__check:checked + & {
       background-color: var(--accent-color);
       border: 2px solid var(--accent-color);
     }
   
-    .form-check:focus + & {
+    .contact-form__check:focus + & {
       border: 2px solid var(--accent-color);
     }
   }
 
-  .icon-check {
+    .contact-form__icon-check {
     display: none;
     fill: #ffffff;
-
-    .form-check:checked + .check & {
+    .contact-form__check:checked + .check & {
       display: block;
     }
   }
 
-  .form-check {
+    .contact-form__check {
     position: absolute;
     appearance: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    .contact-form {
+      max-width: 448px;
+    }
+
+    .contact-form__text {
+      line-height: (23/20);
+    }
+
+    .contact-form__agreement-label {
+      font-size: 14px;
+      line-height: (24/14);
+    }
+  }
+
+//   .contact-form__text {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: (23/20);
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: #212121;
+//     margin-bottom: 12px;
+//     margin-top: 0;
+//   }
+
+//   .contact-form__label {
+//     display: block;
+//     font-size: 12px;
+//     line-height: (14/12);
+//     letter-spacing: 0.01em;
+//     margin-bottom: 4px;
+//   }
+
+//   .contact-form__comment-area {
+//     height: 120px;
+//     padding: 12px 16px;
+//     resize: none;
+
+//     &::placeholder {
+//       font-size: 12px;
+//       line-height: (14/12);
+//       letter-spacing: 0.01em;
+//       color: rgba(117, 117, 117, 0.5);
+//     }
+//   }
+
+//   //! Чекбокс  модального окна
+
+//   .contact-form__agreement-label {
+//     font-size: 14px;
+//     line-height: (24/14);
+//     letter-spacing: 0.03em;
+  
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+  
+//     margin-bottom: 30px;
+
+//     & a {
+//       color: var(--accent-color);
+//     }
+//   }
+
+
+
+
+
+

@@ -638,73 +638,73 @@
           </svg>
         </button>
         <form class="contact-form">
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-          <div class="field">
-            <label for="user-name" class="form-label">Ім'я</label>
-            <span class="for-icon">
+          <p class="contact-form__text">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="contact-form__field">
+            <label for="user-name" class="contact-form__label">Ім'я</label>
+            <span class="contact-form__for-icon">
               <input
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="forms user-info"
+                class="forms contact-form__user-info"
               />
-              <svg class="icon-forms" width="18" height="18">
+              <svg class="contact-form__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-person-black"></use>
               </svg>
             </span>
           </div>
-          <div class="field">
-            <label for="user-tel" class="form-label">Телефон</label>
-            <span class="for-icon">
+          <div class="contact-form__field">
+            <label for="user-tel" class="contact-form__label">Телефон</label>
+            <span class="contact-form__for-icon">
               <input
                 required
                 pattern="[0-9]{10}"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
-                class="forms user-info"
+                class="forms contact-form__user-info"
               />
-              <svg class="icon-forms" width="18" height="18">
+              <svg class="contact-form__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-phone-black"></use>
               </svg>
             </span>
           </div>
-          <div class="field">
-            <label for="user-mail" class="form-label">Пошта</label>
-            <span class="for-icon">
+          <div class="contact-form__field">
+            <label for="user-mail" class="contact-form__label">Пошта</label>
+            <span class="contact-form__for-icon">
               <input
                 required
                 type="email"
                 name="user-mail"
                 id="user-mail"
-                class="forms user-info"
+                class="forms contact-form__user-info"
               />
-              <svg class="icon-forms" width="18" height="18">
+              <svg class="contact-form__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-email-black"></use>
               </svg>
             </span>
           </div>
-          <div class="field-area">
-            <label for="user-comment" class="form-label">Коментар</label>
+          <div class="contact-form__field-area">
+            <label for="user-comment" class="contact-form__label">Коментар</label>
             <textarea
               placeholder="Введіть текст"
               name="user-comment"
               id="user-comment"
-              class="forms coment-area"
+              class="forms contact-form__comment-area"
             ></textarea>
           </div>
-          <label class="agreement-label">
+          <label class="contact-form__agreement-label">
             <input
               type="checkbox"
-              class="form-check"
+              class="contact-form__check"
               name="user-policy"
               required
             />
             <svg class="check">
               <use
-                class="icon-check"
+                class="contact-form__icon-check"
                 href="./images/sprite.svg#icon-check"
               ></use>
             </svg>
