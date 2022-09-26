@@ -125,7 +125,7 @@
         </div>
       </section>
       <!--! Блок про виды деятельности -->
-      <!-- <section class="activities-section">
+      <section class="activities-section">
         <div class="container">
           <ul class="list activities-list">
             <li class="activities-list__item">
@@ -134,42 +134,42 @@
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="activities-section__title section-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="activities-section__title section-title">увага до деталей</h3>
               <p class="activities-list__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="punctuality-list">
+            <li class="activities-list__item">
               <div class="activities-list__icon-wrap">
                 <svg class="activities-list__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="activities-section__title section-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="activities-section__title section-title">пунктуальність</h3>
               <p class="activities-list__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="planning-list">
+            <li class="activities-list__item">
               <div class="activities-list__icon-wrap">
                 <svg class="activities-list__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="activities-section__title section-title">ПЛАНУВАННЯ</h3>
+              <h3 class="activities-section__title section-title">планування</h3>
               <p class="activities-list__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="technology-list">
+            <li class="activities-list__item">
               <div class="activities-list__icon-wrap">
                 <svg class="activities-list__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="activities-section__title section-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="activities-section__title section-title">сучасні технології</h3>
               <p class="activities-list__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -177,26 +177,28 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--! Блок чем мы занимаемся-->
-      <!-- <section class="metier-section">
+      <section class="metier-section">
         <div class="container">
           <h2 class="main section-title">Чим ми займаємося</h2>
           <ul class="list activity-list">
             <li class="activity-list__item_relative">
-              <img class="activity-list__img"
-                src="./images/what-we-do-1.jpg"
-                alt="Якісне програмування"
-                width="370"
-                height="294"
-              />
+                <img class="activity-list__img"
+                  srcset="./images/wwd/what-we-do-1.jpg 1x, ./images/wwd/what-we-do-1@2x.jpg 2x"
+                  src="./images/wwd/what-we-do-1.jpg"
+                  alt="Якісне програмування"
+                  width="370"
+                  height="294"
+                />
               <div class="activity-list__label_absolute">
                 <p class="activity-list__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="activity-list__item_relative">
               <img class="activity-list__img"
-                src="./images/what-we-do-2.jpg"
+                srcset="./images/wwd/what-we-do-2.jpg 1x, ./images/wwd/what-we-do-2@2x.jpg 2x"
+                src="./images/wwd/what-we-do-2.jpg"
                 alt="Сучасні технології"
                 width="370"
                 height="294"
@@ -207,7 +209,8 @@
             </li>
             <li class="activity-list__item_relative">
               <img class="activity-list__img"
-                src="./images/what-we-do-3.jpg"
+                srcset="./images/wwd/what-we-do-3.jpg 1x, ./images/wwd/what-we-do-3@2x.jpg 2x"
+                src="./images/wwd/what-we-do-3.jpg"
                 alt="Дизайнерскі рішення"
                 width="370"
                 height="294"
@@ -218,19 +221,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--! Блок наша команда -->
-      <!-- <section class="main team-section">
+      <section class="main team-section">
         <div class="container">
           <h2 class="main section-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item">
-              <img class="team-list__img"
-                src="./images/photo-1.jpg"
-                alt="Фото Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/photo-1.jpg 1x, ./images/team/photo-1@2x.jpg 2x" 
+                media="(min-width:1200px">
+                <source srcset="./images/team/tablet-photo-1.jpg 1x, ./images/team/tablet-photo-1@2x.jpg 2x" 
+                media="(min-width:768px">
+                <source srcset="./images/team/mobile-photo-1.jpg 1x, ./images/team/mobile-photo-1@2x.jpg 2x" 
+                media="(max-width:767px">
+                <img src="./images/team/mobile-photo-1.jpg"
+                  class="team-list__img"
+                  alt="Фото Ігор Дем'яненко"
+                />
+              </picture>
               <h3 class="team-list__title section-title">Ігор Дем'яненко</h3>
               <p class="team-list__text">Product Designer</p>
               <ul class="list team-social-list">
@@ -285,12 +294,18 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img"
-                src="./images/photo-2.jpg"
-                alt="Фото Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/photo-2.jpg 1x, ./images/team/photo-2@2x.jpg 2x" 
+                media="(min-width:1200px">
+                <source srcset="./images/team/tablet-photo-2.jpg 1x, ./images/team/tablet-photo-2@2x.jpg 2x" 
+                media="(min-width:768px">
+                <source srcset="./images/team/mobile-photo-2.jpg 1x, ./images/team/mobile-photo-2@2x.jpg 2x" 
+                media="(max-width:767px">
+                <img class="team-list__img"
+                  src="./images/team/mobile-photo-2.jpg"
+                  alt="Фото Ольга Рєпіна"
+                />
+              </picture>
               <h3 class="team-list__title section-title">Ольга Рєпіна</h3>
               <p class="team-list__text">Frontend Developer</p>
               <ul class="list team-social-list">
@@ -345,12 +360,18 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img"
-                src="./images/photo-3.jpg"
-                alt="Фото Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/photo-3.jpg 1x, ./images/team/photo-3@2x.jpg 2x" 
+                media="(min-width:1200px">
+                <source srcset="./images/team/tablet-photo-3.jpg 1x, ./images/team/tablet-photo-3@2x.jpg 2x" 
+                media="(min-width:768px">
+                <source srcset="./images/team/mobile-photo-3.jpg 1x, ./images/team/mobile-photo-3@2x.jpg 2x" 
+                media="(max-width:767px">
+                <img class="team-list__img"
+                  src="./images/team/mobile-photo-3.jpg"
+                  alt="Фото Микола Тарасов"
+                />
+              </picture>
               <h3 class="team-list__title section-title">Микола Тарасов</h3>
               <p class="team-list__text">Marketing</p>
               <ul class="list team-social-list">
@@ -405,12 +426,18 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img"
-                src="./images/photo-4.jpg"
-                alt="Фото Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/photo-4.jpg 1x, ./images/team/photo-4@2x.jpg 2x" 
+                media="(min-width:1200px">
+                <source srcset="./images/team/tablet-photo-4.jpg 1x, ./images/team/tablet-photo-4@2x.jpg 2x" 
+                media="(min-width:768px">
+                <source srcset="./images/team/mobile-photo-4.jpg 1x, ./images/team/mobile-photo-4@2x.jpg 2x" 
+                media="(max-width:767px">
+                <img class="team-list__img"
+                  src="./images/team/mobile-photo-4.jpg"
+                  alt="Фото Михайло Єрмаков"
+                />
+              </picture>
               <h3 class="team-list__title section-title">Михайло Єрмаков</h3>
               <p class="team-list__text">UI Designer</p>
               <ul class="list team-social-list">
@@ -466,7 +493,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--! Наши клиенты -->
       <!-- <section class="clients-section">
         <div class="container">

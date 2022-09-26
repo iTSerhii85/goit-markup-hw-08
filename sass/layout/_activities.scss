@@ -1,19 +1,15 @@
-.activities-list {
-  display: flex;
-  gap: 30px;
-}
-
 .activities-section__title {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: (16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
   
     margin-top: 0;
     margin-bottom: 10px;
   }
-  
-  .activities-list__icon-wrap {
+
+    .activities-list__icon-wrap {
     @include flex-center;
 
     height: 120px;
@@ -23,10 +19,74 @@
     margin-bottom: 30px;
   }
 
-  .activities-list__text {
+    .activities-list__text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: (24/14);
     letter-spacing: 0.03em;
   
-    margin: 0;
+    margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 768px) {
+    .activities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .activities-list__item {
+      width: 354px;
+      height: 226px;
+    }
+
+    .activities-section__title {
+      text-align: left;
+    }
+
+    .activities-list__text {
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .activities-list__item {
+      width: 270px;
+    }
+
+    .activities-list {
+      flex-wrap: nowrap;
+    }
+  }
+
+// .activities-list {
+//   display: flex;
+//   gap: 30px;
+// }
+
+// .activities-section__title {
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+  
+//     margin-top: 0;
+//     margin-bottom: 10px;
+//   }
+  
+//   .activities-list__icon-wrap {
+//     @include flex-center;
+
+//     height: 120px;
+//     border-radius: 4px;
+//     background-color: #f5f4fa;
+  
+//     margin-bottom: 30px;
+//   }
+
+//   .activities-list__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+  
+//     margin: 0;
+//   }

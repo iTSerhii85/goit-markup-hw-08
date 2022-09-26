@@ -1,5 +1,5 @@
 :root {
-  --brend-color: #2196f3;
+  --brand-color: #2196f3;
   --background-color: #ffffff;
   --header-background-color: #ffffff;
   --hero-title-color: #ffffff;
@@ -54,18 +54,36 @@ img {
   height: auto;
 }
 
-.metier-section,
+.activities-section {
+  padding-top: 60px;
+}
+
+.metier-section {
+  display: none;
+}
+
 .team-section,
 .portfolio-section,
 .clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.activities-section {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .metier-section {
+    display: block;
+  }
+  .metier-section,
+.team-section,
+.portfolio-section,
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .activities-section {
+    padding-top: 94px;
+  }
 }
-
 .container {
   padding: 0 15px;
 }
@@ -209,14 +227,21 @@ img {
 }
 
 .main.section-title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .main.section-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
+}
 .logo,
 .footer-logo {
   font-family: var(--logo-font);
@@ -230,7 +255,7 @@ img {
   color: #000000;
 }
 .logo > span {
-  color: var(--brend-color);
+  color: var(--brand-color);
 }
 
 .footer-logo {
@@ -691,16 +716,12 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero2x.jpg);
   }
 }
-.activities-list {
-  display: flex;
-  gap: 30px;
-}
-
 .activities-section__title {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -717,11 +738,36 @@ img {
 
 .activities-list__text {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .activities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .activities-list__item {
+    width: 354px;
+    height: 226px;
+  }
+  .activities-section__title {
+    text-align: left;
+  }
+  .activities-list__text {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activities-list__item {
+    width: 270px;
+  }
+  .activities-list {
+    flex-wrap: nowrap;
+  }
+}
 .activity-list {
   display: flex;
   gap: 30px;
@@ -761,7 +807,7 @@ img {
 
 .team-list__text {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
@@ -771,7 +817,7 @@ img {
 .team-list__title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
@@ -779,25 +825,20 @@ img {
   padding-top: 30px;
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.team-list__item {
-  background-color: #ffffff;
-  width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
 .team-social-list {
   display: flex;
   justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+.team-list__item {
+  background-color: #ffffff;
+  max-width: 450px;
+  height: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-social-list__icon {
@@ -816,6 +857,25 @@ img {
   background-color: var(--accent-color);
 }
 
+.team-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    max-width: 270px;
+  }
+  .team-social-list {
+    padding-bottom: 30px;
+  }
+}
 .clients-social-list {
   display: flex;
   justify-content: center;

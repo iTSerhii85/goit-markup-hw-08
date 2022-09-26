@@ -18,5 +18,9 @@
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": [
        "defaults"
-   ]
+],
+"cSpell.words": [
+    "Проєкт",
+    "Технокряк"
+]
 }

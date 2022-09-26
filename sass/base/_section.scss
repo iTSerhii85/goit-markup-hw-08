@@ -1,10 +1,32 @@
-.metier-section,
+.activities-section {
+  padding-top: 60px;
+}
+
+.metier-section {
+  display: none;
+}
+
 .team-section,
 .portfolio-section,
 .clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.activities-section {
-  padding-top: 94px;
+
+@media screen and (min-width: 1200px) {
+  .metier-section {
+    display: block;
+  }
+
+  .metier-section,
+  .team-section,
+  .portfolio-section,
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .activities-section {
+    padding-top: 94px;
+  }
 }
+
