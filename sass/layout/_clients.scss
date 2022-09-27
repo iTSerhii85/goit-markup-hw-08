@@ -1,13 +1,15 @@
 .clients-social-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
+    gap: 30px;
+    // column-gap: 30px;
   }
   
   .clients-social-list__icon {
     @include flex-center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -20,4 +22,16 @@
         fill: var(--accent-color);
         border-color: var(--accent-color);
       }
+  }
+
+  @media screen and (min-width: 768px) {
+    .clients-social-list__icon {
+      width: 226px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .clients-social-list__icon {
+      width: 170px;
+    }
   }

@@ -260,8 +260,20 @@ img {
 
 .footer-logo {
   color: #ffffff;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-logo > span {
+  color: var(--brand-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo,
+.footer-logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -878,16 +890,16 @@ img {
 }
 .clients-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  gap: 30px;
 }
 
 .clients-social-list__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -899,6 +911,16 @@ img {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .clients-social-list__icon {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-social-list__icon {
+    width: 170px;
+  }
+}
 .footer {
   background-color: var(--background-color-footer);
   padding-top: 60px;
@@ -917,26 +939,17 @@ img {
 .footer-list {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 .footer-list li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.maine-footer-address {
-  margin-right: 70px;
+  margin-bottom: 8px;
 }
 
 .footer-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -974,30 +987,32 @@ img {
 }
 
 .footer-input {
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
-  color: #ffffff;
+  color: hsl(0deg, 0%, 100%);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--background-color-footer);
   padding: 15px 16px;
   transition: border-color var(--transition-time-cubic);
+  margin-bottom: 20px;
 }
 .footer-input::-moz-placeholder {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input:-ms-input-placeholder {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input::placeholder {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1006,9 +1021,13 @@ img {
   outline: none;
 }
 
+.maine-footer-address, .footer-social {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .footer-mail {
-  margin-right: 0;
-  margin-left: auto;
+  text-align: center;
 }
 
 .footer-button {
@@ -1017,9 +1036,10 @@ img {
   justify-content: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   min-width: 200px;
+  height: 50px;
   padding: 10px;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -1027,17 +1047,57 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
-}
-
-.footer-label {
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-send-icon {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo-address-and-social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .maine-footer-address {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .maine-footer-address, .footer-social, .footer-mail {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .footer-social {
+    margin-right: 93px;
+  }
+  .maine-footer-address {
+    margin-right: 70px;
+  }
+  .footer-label {
+    display: flex;
+  }
+  .footer-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer-button {
+    margin: 0;
+  }
+  .footer-list {
+    width: 231px;
+  }
+  .footer-list li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 .button {
   background-color: var(--button-background-color);
   color: var(--title-text-color);

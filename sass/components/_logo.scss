@@ -17,6 +17,20 @@
 
   .footer-logo {
     color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+
+        & > span {
+      color: var(--brand-color);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .logo,
+    .footer-logo {
+      font-size: 26px;
+      line-height: (31/26);
+    }
   }
 
 // .logo {
