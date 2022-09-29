@@ -32,8 +32,6 @@
     border-left: 1px solid #eeeeee;
   
     padding: 20px 24px;
-
-
   }
 
   .hover-card {
@@ -106,87 +104,4 @@
     .gallery li {
       width: 370px;
     }
-
-    .hover-card {
-      display: block;
-    }
   }
-
-
-
-
-  // .gallery {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 30px;
-
-  //   & h2 {
-  //     font-size: 18px;
-  //     line-height: 2;
-  //     letter-spacing: 0.06em;
-    
-  //     margin-bottom: 4px;
-  //     margin-top: 0;
-  //   }
-
-  //   & p {
-  //     color: #757575;
-  //     font-size: 16px;
-  //     line-height: 1.88;
-  //     letter-spacing: 0.03em;
-  //     margin: 0;
-  //   }
-    
-  //   & li {
-  //     width: 370px;
-  //   }
-  // }
-
-  // .border {
-  //   border-right: 1px solid #eeeeee;
-  //   border-bottom: 1px solid #eeeeee;
-  //   border-left: 1px solid #eeeeee;
-  
-  //   padding: 20px 24px;
-  // }
-
-  // .hover-card {
-  //   display: block;
-  //   text-decoration: none;
-  //   background-color: #ffffff;
-  //   transition: box-shadow var(--transition-time-cubic);
-
-  //   &:hover,
-  //   &:focus {
-  //     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  //       1px 4px 6px rgba(0, 0, 0, 0.16);
-  //   }
-  // }
-
-  // .overlay-box {
-  //   position: relative;
-  //   overflow: hidden;
-  // }
-  
-  // .overlay-box > .overlay {
-  //   padding: 63px 24px;
-  //   font-size: 18px;
-  //   line-height: 1.55;
-  //   letter-spacing: 0.03em;
-  //   color: #ffffff;
-  //   background-color: var(--bg-color-overlay);
-  
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 0;
-  //   overflow: auto;
-  //   transform: translateY(100%);
-  //   transition: transform var(--transition-time-cubic);
-
-  //   .hover-card:hover &,
-  //   .hover-card:focus & {
-  //     transform: translateY(0%);
-  //   }
-  // }

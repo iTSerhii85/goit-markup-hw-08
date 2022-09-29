@@ -130,8 +130,6 @@
       margin-left: 10px;
     }
 
-
-
   @media screen and (min-width: 768px) {
     .footer-logo-address-and-social-wrapper {
       display: flex;
@@ -150,6 +148,10 @@
        .footer-container {
       display: flex;
       align-items: baseline;
+    }
+
+    .footer-logo-address-and-social-wrapper {
+      margin-bottom: 0;
     }
 
     .maine-footer-address, .footer-social, .footer-mail {
@@ -186,44 +188,3 @@
       }
     }
   }
-
-  // .footer-list {
-  //   font-weight: 400;
-  //   font-size: 14px;
-  //   line-height: (24/14);
-  //   letter-spacing: 0.03em;
-
-  //   & li:not(:last-child) {
-  //     margin-bottom: 9px;
-  //   }
-  // }
-
-  // .footer-container {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
-
-  // .maine-footer-address {
-  //   margin-right: 70px;
-  // }
-
-
-  //! Форма в футере
-  // .footer-input {
-  //   width: 358px;
-  // }
-
-  // .footer-mail {
-  //   margin-right: 0;
-  //   margin-left: auto;
-  // }
-
-  //! Кнопка футера
-  // .footer-button {
-  //   margin-left: 12px;
-  // }
-
-  // .footer-label {
-  //   display: flex;
-  // }
-
