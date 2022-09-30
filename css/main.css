@@ -638,7 +638,6 @@ img {
 }
 .background {
   max-width: 1600px;
-  min-height: 400px;
   margin: 0 auto;
   background-color: var(--background-color-hero);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile1x.jpg);
@@ -695,7 +694,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .background {
-    min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet1x.jpg);
   }
 }
@@ -706,7 +704,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .background {
-    min-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }
   .hero {
