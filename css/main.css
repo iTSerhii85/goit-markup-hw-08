@@ -632,10 +632,12 @@ img {
   }
   .auth-nav__link {
     padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 .background {
-  max-width: 480px;
+  max-width: 1600px;
   min-height: 400px;
   margin: 0 auto;
   background-color: var(--background-color-hero);
@@ -693,7 +695,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .background {
-    max-width: 768px;
     min-height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet1x.jpg);
   }
@@ -705,7 +706,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .background {
-    max-width: 1200px;
     min-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }

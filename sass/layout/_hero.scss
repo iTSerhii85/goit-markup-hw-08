@@ -1,5 +1,5 @@
   .background {
-    max-width: 480px;
+    max-width: 1600px;
     min-height: 400px;
     margin: 0 auto;
     background-color: var(--background-color-hero);
@@ -14,6 +14,7 @@
     background-origin: padding-box;
     background-clip: padding-box;
   }
+
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
   screen and (min-resolution: 192dpi) and (max-width: 767px), 
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -74,7 +75,6 @@
 
   @media screen and (min-width: 768px) {
     .background {
-      max-width: 768px;
       min-height: 400px;
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -83,6 +83,7 @@
         url(../images/hero/hero-tablet1x.jpg);
     }
   }
+
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
   screen and (min-resolution: 192dpi) and (min-width: 768px), 
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -97,7 +98,6 @@
 
   @media screen and (min-width: 1200px) {
     .background {
-      max-width: 1200px;
       min-height: 600px;
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -122,6 +122,7 @@
       max-width: 696px;
     }
   }
+  
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), 
   screen and (min-resolution: 192dpi) and (min-width: 1200px), 
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
